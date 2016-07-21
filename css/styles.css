@@ -127,8 +127,10 @@ div#shopping-basket {
 	/*background: #eee;*/
 	border-bottom: solid 1px gray;
 	margin-top: 137px;
-	background-image: url("../images/background2.png");
+	/*background-image: url("../images/background2.png");*/
 	background-repeat: no-repeat;
 	background-size: cover;
 	overflow: auto;
+	text-align: center;
+	color: #6d6868;
 }
