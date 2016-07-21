@@ -49,6 +49,7 @@ hr {
 	background-repeat: no-repeat;
 	background-size: cover;
 	overflow: auto;
+	border-radius: 5px;
 }
 
 .masthead-heading-3 {
