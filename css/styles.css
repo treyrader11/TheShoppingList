@@ -120,6 +120,18 @@ div#shopping-basket {
 	
 }
 
+.shopping-list {
+	text-align: center;
+	font-family: "Amatic SC",sans-serif;
+	font-size: 30px;
+
+}
+
+.checked-list {
+	/*list-style-image:url("images/checkmark.png");*/
+	list-style-type: none;
+}
+
 .fa {
 	font-size: 28px;
 }
