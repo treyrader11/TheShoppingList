@@ -1,6 +1,10 @@
 * {	
 }
 
+div {
+	box-sizing: border-box;
+}
+
 hr {
 	color: black;
 	max-width: 520px;
@@ -74,6 +78,7 @@ div#shopping-basket {
 	
 	
 	
+	
 }
 
 #write-image {
@@ -121,16 +126,71 @@ div#shopping-basket {
 }
 
 .shopping-list {
-	text-align: center;
+	
 	font-family: "Amatic SC",sans-serif;
 	font-size: 30px;
+	
+	max-width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 16px;
+	padding-left: 76px;
 
+}
+
+#shopping-bag {
+	text-align: center;
+	padding-right: 5px;
+
+}
+
+#shopping-bag > li {
+	float: left;
+	list-style-type: none;
+	padding: 63px;
+	
+
+}
+
+.checked-list,
+.needed-list {
+	/*list-style-image:url(images/checkmark.png);*/
+	list-style-type: none;
 }
 
 .checked-list {
-	/*list-style-image:url("images/checkmark.png");*/
-	list-style-type: none;
+
 }
+
+
+
+.left-container,
+.right-container {
+	/*max-width: 295px;*/
+	/*width: 300px;*/
+	
+
+	
+}
+
+.left-container {
+	margin-right: 43px;
+	margin-left: 4px;
+}
+
+.right-container {
+	margin-right: 3px;
+
+}
+
+
+
+
+
+
+
+
+
 
 .fa {
 	font-size: 28px;
@@ -155,4 +215,18 @@ div#shopping-basket {
 	overflow: auto;
 	text-align: center;
 	color: #6d6868;
+	
+}
+
+
+
+div#wrapper {
+	
+	width: 100vh;
+    height: 100vh;
+    
+    box-sizing: border-box;
+	text-align: center;
+	overflow: auto;
+	margin: left 20px;
 }

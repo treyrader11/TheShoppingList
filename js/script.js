@@ -1,3 +1,5 @@
 $(document).ready(function() {
-	//alert("Hello!")
+	$('.checked-list:first-child').click(function() { 
+   		$('#area').val('foobar');
+	});
 });

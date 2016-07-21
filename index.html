@@ -10,50 +10,86 @@
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<header class="masthead">
-	<h4 class="masthead-heading-1">The</h4>
-	<h2 class="masthead-heading-2"><em>Shopping</em></h2>
-	<h1 class="masthead-heading-3">List</h1>
+<div>
+	<header class="masthead">
+		<h4 class="masthead-heading-1">The</h4>
+		<h2 class="masthead-heading-2"><em>Shopping</em></h2>
+		<h1 class="masthead-heading-3">List</h1>
 	
 	
 </header>
-<section class="shopping-basket">
-	<div id="shopping-basket">
-		<img src="images/shoppingBasket3.png" height="150" width="130" alt="red shopping basket"/>
-	</div>
-</section>
-<hr/>
+</div>
 
-<section class="text-area">
-	
-	<form class="add-item">
+
+
+<div>
+	<section class="shopping-basket">
+		<div id="shopping-basket">
+			<img src="images/shoppingBasket3.png" height="150" width="130" alt="red shopping basket"/>
+		</div>
+	</section>
+	<hr/>
+
+	<section class="text-area">
 		
-		<img id="write-image" src="images/hand-and-pen-clipart-2.jpg" alt="hand writing" height="40" width="30">
-	
-		<input class="add-item-input" type="text" >
-		<button class="btn" type="button">Add</button>
-	</form>
-	<div id="arrow-down">
-		<img src="images/downArrow.png" height="40" width="30" alt="arrow pointing down">
-	</div>
-</section>
-<section class="shopping-list">
-	<ul class="checked-list">
-		<li>Eggs</li>
-		<li>Almond Milk</li>
-		<li>Coffee</li>
-		<li>Smoked Gouda</li>
-		<li>Sardines</li>
-	</ul>
-	<div class="icons">
-		<i class="fa fa-cut"></i>
-		<i class="fa fa-check"></i>
-	</div>
-</section>
-<footer class="footer">
-	&copy; 2016 TreyRader
-	
-</footer>
+		<form class="add-item">
+			
+			<img id="write-image" src="images/hand-and-pen-clipart-2.jpg" alt="hand writing" height="40" width="30">
+		
+			<input class="add-item-input" type="text" >
+			<button class="btn" type="button">Add</button>
+		</form>
+		<div id="arrow-down">
+			<img src="images/downArrow.png" height="40" width="30" alt="arrow pointing down">
+		</div>
+	</section>
+</div>
+
+
+
+<!--segrating "section.shopping-list" because I need to figure it out-->
+
+
+
+<div>
+	<section class="shopping-list">
+		<div id="wrapper">
+			<ul id="shopping-bag">
+				<li class="left-container">
+					<ul class="needed-list">
+						<li><img src="images/checkmark.png" height="25" width="25">Eggs</li>
+						<li><img src="images/checkmark.png" height="25" width="25">Almond Milk</li>
+						<li><img src="images/checkmark.png" height="25" width="25">Coffee</li>
+						<li><img src="images/checkmark.png" height="25" width="25">Smoked Gouda</li>
+						<li><img src="images/checkmark.png" height="25" width="25">Sardines</li>
+					</ul>
+				</li>
+				<li class="right-container">
+					<ul class="checked-list">
+						<li><img src="images/checkmark.png" height="25" width="25">Eggs</li>
+						<li><img src="images/checkmark.png" height="25" width="25">Almond Milk</li>
+						<li><img src="images/checkmark.png" height="25" width="25">Coffee</li>
+						<li><img src="images/checkmark.png" height="25" width="25">Smoked Gouda</li>
+						<li><img src="images/checkmark.png" height="25" width="25">Sardines</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!--<div class="icons">
+			<i class="fa fa-cut"></i>
+			<i class="fa fa-check"></i>
+		</div>-->
+	</section>
+</div>
+
+
+
+
+<div>
+	<footer class="footer">
+		&copy; 2016 TreyRader
+	</footer>
+</div>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="js/script.js"></script>	
 </body>
