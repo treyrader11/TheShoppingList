@@ -139,15 +139,23 @@ div#shopping-basket {
 
 }
 
-.checked-list,
+
 .needed-list {
 	list-style-type: none;
 	box-sizing: border-box;
+	padding-left: 170px;
+ 	/*list-style: none outside url("../images/checkmark.png");
+	background-size: 30px 40px;
+	background-repeat: no-repeat;*/
 }
 
-.checked-list {
-
+.needed-list li {
+	max-width: 350px;
+	padding: 7px;
+	margin-bottom: 9px;
+	border-radius: 10px;
 }
+
 
 
 
@@ -188,8 +196,18 @@ div#shopping-basket {
 
 
 
-.shopping-list a:hover {
-	cursor: pointer;	
+.shopping-list li:hover {
+	cursor: pointer;
+	border: dotted 2px #ddd;
+	/*list-style-type: circle;*/
+	content: '';
+    display: inline-block;
+    height: 25px;
+    width: 35px;
+    background-image: url('../images/checkmark.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: -35px;
 
 }
 

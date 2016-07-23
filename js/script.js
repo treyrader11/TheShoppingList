@@ -11,7 +11,7 @@ $(document).ready(function() {
 	})
   $('.btn').click(function() {
     var userText = $('.add-item-input').val();
-    $('.needed-list').prepend("<li><a>" + userText + "</a></li>");
+    $('.needed-list').prepend("<li><img src='images/checkmark.png' height='25' width='25'><a>" + userText + "</a></li>");
     $('ul.needed-list a').on("click", function() {
       $(this).addClass('color-change');
     })
@@ -24,7 +24,23 @@ $(document).ready(function() {
 
 
  
+$(document).ready(function() {
+  $('.add-item').keydown(function (e) {
+    var userText = $('.add-item-input').val();
 
+    if (e.which == 13) {
+      //alert("enter");
+      $('.needed-list').prepend("<li><img src='images/checkmark.png' height='25' width='25'><a>" + userText + "</a></li>");
+      $('ul.needed-list a').on("click", function() {
+        $(this).addClass('color-change');
+      })
+      $('ul.needed-list a').on("dblclick", function() {
+        $(this).removeClass('color-change');
+      });
+      return false; /*this stops the enter key from refreshing the page*/
+    }
+  });
+});
 
 
 
