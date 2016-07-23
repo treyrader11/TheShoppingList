@@ -130,33 +130,19 @@ div#shopping-basket {
 	
 	font-family: "Amatic SC",sans-serif;
 	font-size: 30px;
-	
 	max-width: 960px;
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 16px;
-	padding-left: 76px;
-
-}
-
-#shopping-bag {
+	padding-right: 48px;
 	text-align: center;
-	padding-right: 5px;
-
-}
-
-#shopping-bag > li {
-	float: left;
-	list-style-type: none;
-	padding: 63px;
-	
 
 }
 
 .checked-list,
 .needed-list {
-	/*list-style-image:url(images/checkmark.png);*/
 	list-style-type: none;
+	box-sizing: border-box;
 }
 
 .checked-list {
@@ -164,25 +150,6 @@ div#shopping-basket {
 }
 
 
-
-.left-container,
-.right-container {
-	/*max-width: 295px;*/
-	/*width: 300px;*/
-	
-
-	
-}
-
-.left-container {
-	margin-right: 43px;
-	margin-left: 4px;
-}
-
-.right-container {
-	margin-right: 3px;
-
-}
 
 
 
@@ -221,13 +188,17 @@ div#shopping-basket {
 
 
 
-div#wrapper {
-	
-	width: 100vh;
-    height: 100vh;
-    
-    box-sizing: border-box;
-	text-align: center;
-	overflow: auto;
-	margin: left 20px;
+.shopping-list a:hover {
+	cursor: pointer;	
+
 }
+
+
+/*hidden classes*/
+
+.color-change {
+	color: blue;
+	font-size: 20px;
+}
+
+
