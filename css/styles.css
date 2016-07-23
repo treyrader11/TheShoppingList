@@ -1,9 +1,6 @@
 * {	
 }
 
-div {
-	box-sizing: border-box;
-}
 
 hr {
 	color: black;
@@ -14,7 +11,6 @@ hr {
 
 .masthead {
 	padding: 34px;
-	/*background: #eee;*/
 	font-family: "Amatic SC",sans-serif;
 	margin-bottom: -73px;
 	max-width: 960px;
@@ -44,7 +40,6 @@ hr {
 	font-size: 106px;
 	margin-top: -86px;
 	text-shadow: 0px 6px 0px #ddd;
-	/*background: #eee;*/
 	background-image: url("../images/background2.png");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -120,11 +115,6 @@ div#shopping-basket {
 
 }
 
-.icons {
-	text-align: center;
-	/*border: 1px solid red;*/
-	
-}
 
 .shopping-list {
 	
@@ -144,10 +134,7 @@ div#shopping-basket {
 	list-style-type: none;
 	box-sizing: border-box;
 	padding-left: 170px;
- 	/*list-style: none outside url("../images/checkmark.png");
-	background-size: 30px 40px;
-	background-repeat: no-repeat;*/
-}
+ }
 
 .needed-list li {
 	max-width: 350px;
@@ -168,24 +155,14 @@ div#shopping-basket {
 
 
 
-.fa {
-	font-size: 28px;
-}
-
-.fa-cut {
-	color: #ddd;
-	text-shadow: 0px 0px 3px red;
-}
 
 .footer {
 	max-width: 521px;
 	margin-right: auto;
 	margin-left: auto;
 	padding: 6px;
-	/*background: #eee;*/
 	border-bottom: solid 1px gray;
 	margin-top: 137px;
-	/*background-image: url("../images/background2.png");*/
 	background-repeat: no-repeat;
 	background-size: cover;
 	overflow: auto;
@@ -196,19 +173,9 @@ div#shopping-basket {
 
 
 
-.shopping-list li:hover {
+.needed-list li:hover {
 	cursor: pointer;
 	border: dotted 2px #ddd;
-	/*list-style-type: circle;*/
-	content: '';
-    display: inline-block;
-    height: 25px;
-    width: 35px;
-    background-image: url('../images/checkmark.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-left: -35px;
-
 }
 
 
@@ -220,3 +187,7 @@ div#shopping-basket {
 }
 
 
+#arrow-down a:hover {
+	cursor: pointer;
+	
+}
