@@ -2,20 +2,27 @@
 
 
 $(document).ready(function() {
-	$('.needed-list a').on("click", function() {
+	$('ul.needed-list a').on("click", function() {
 		$(this).addClass('color-change');
 		
 	})
-	$('.needed-list a').on("dblclick", function() {
+	$('ul.needed-list a').on("dblclick", function() {
 		$(this).removeClass('color-change');
-	});
+	})
+  $('.btn').click(function() {
+    var userText = $('.add-item-input').val();
+    $('.needed-list').prepend("<li><a>" + userText + "</a></li>");
+    $('ul.needed-list a').on("click", function() {
+      $(this).addClass('color-change');
+    })
+      $('ul.needed-list a').on("dblclick", function() {
+      $(this).removeClass('color-change');
+    });
+  });
 });
 
 
-$('.btn').click(function() {
-  var userText = $('.add-item-input').val();
-  $('.needed-list').prepend("<li><a>" + userText + "</a></li>");
-  });
+
  
 
 
