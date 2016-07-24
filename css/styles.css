@@ -93,7 +93,7 @@ div#shopping-basket {
 .add-item-input {
 	border-radius: 5px;
 	border-color: #ddd;
-
+	color: #ddd;
 	width: 239px;
 	font-family: "Amatic SC",sans-serif;
 	font-size: 30px;
@@ -134,6 +134,7 @@ div#shopping-basket {
 	list-style-type: none;
 	box-sizing: border-box;
 	padding-left: 170px;
+	margin-top: -15px;
  }
 
 .needed-list li {
@@ -182,12 +183,50 @@ div#shopping-basket {
 /*hidden classes*/
 
 .color-change {
-	color: blue;
+	color: #3e3c3c;
 	font-size: 20px;
+	text-decoration: line-through;
 }
 
 
 #arrow-down a:hover {
 	cursor: pointer;
 	
+}
+
+/*.fa {
+	font-size: 23px;
+	display:
+}
+
+.fa-check {
+	padding-top: 7px;
+	float: left;
+}
+
+.fa-cut {
+	padding-top: 7px;
+	float: right;
+} */
+
+.active {
+
+}
+
+
+/*.needed-list li {
+    list-style-image: url('../images/checkmark2.png');
+	list-style-position: inside;
+	
+	
+}*/
+
+.needed-list li .left-image {
+	float: left;
+	margin-top: 7px;
+}
+
+.needed-list li .right-image {
+	float: right;
+	margin-top: 7px;
 }

@@ -22,43 +22,78 @@ $(document).ready(function() {
 });
 
 
-
- 
+//when you press the enter key, the value of the textarea is sent to the meeded-list.
+//more code under so that the new items can receive the addClass. 
 $(document).ready(function() {
   $('.add-item').keydown(function (e) {
     var userText = $('.add-item-input').val();
 
     if (e.which == 13) {
-      
-      
-      $('.needed-list').slideToggle("slow", function() {});
-      $('.needed-list').prepend("<li><a>" + userText + "</a></li>");
+
+      var newItem = $('.needed-list').prepend("<li><img class='left-image' src='images/checkmark2.png' height='20' width='20'><a>" + userText + "</a><img class='right-image' src='images/cut.jpg' height='20' width='20'></li>");
+      newItem.on("click", ".right-image", function() {
+        $(this).remove();
+      })
       $('ul.needed-list a').on("click", function() {
         $(this).addClass('color-change');
+        
       })
       $('ul.needed-list a').on("dblclick", function() {
         $(this).removeClass('color-change');
       })
-
-      
       return false; /* default behavior/this stops the enter key from refreshing the page*/
-      userText.val('');
+      //userText.val('');
+      
+      
+
     }
+ 
+
   });
 });
 
+
+//when you click the arrow icon, the list toggles down.
+
 $(document).ready(function() {
-  $('.needed-list').hide();
+  //$('.needed-list').hide();
   $('#arrow-down a').click(function() {
     $('.needed-list').slideToggle("slow", function() {
 
     })
+  })
+ });
+
+
+
+
+
+
+
+
+//icons display
+
+$(document).ready(function() {
+  $('.needed-list .left-image').hide();
+  $('.needed-list .right-image').hide();
+  $('.needed-list li').mouseenter(function() {
+    $('.needed-list .left-image').show();
+    $('.needed-list .right-image').show();
+  })
+  $('.needed-list li').mouseleave(function() {
+    $('.needed-list .left-image').hide();
+    $('.needed-list .right-image').hide();
   })
 });
 
 
 
 
+$(document).ready(function() {
+  $('.right-image'/*scissors*/).on("click", function (){
+    $(this).parent().remove();
+  });
+});
 
 
 
@@ -71,19 +106,9 @@ $(document).ready(function() {
 //https://www.youtube.com/watch?v=gIvR-WX5lIQ&list=PLsuLcuI9F2k1Hi0BQK3OE1wmkqiwG-dgd
 
 
-/*$(document).ready(function() {
-  $('.btn').on("click", function() {
-    var userText = $('.add-item-input').val();
-    $('.needed-list').append("<li><a>" + userText + "</a></li>");
-  })
-  $('.needed-list a').on("click", function() {
-    $(this).addClass('color-change');
-    $(this).on("dblclick", function() {
-      $(this).removeClass('color-change');
-    });
-  });
 
-});
-*/
+
+
+
 
 
