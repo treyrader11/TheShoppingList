@@ -135,6 +135,7 @@ div#shopping-basket {
 	box-sizing: border-box;
 	padding-left: 170px;
 	margin-top: -15px;
+	text-align: center;
  }
 
 .needed-list li {
