@@ -130,16 +130,18 @@ div#shopping-basket {
 .needed-list {
 	list-style-type: none;
 	box-sizing: border-box;
-	padding-left: 16.625rem;
+	/*padding-left: 16.625rem;*/
 	margin-top: -0.9375rem;
 	text-align: center;
+	width: 100%;
  }
 
 .needed-list li {
 	max-width: 21.875rem;
-	padding: 0.4375rem;
-	margin-bottom: 0.5625rem;
+	/*padding: 0.4375rem;
+	margin-bottom: 0.5625rem;*/
 	border-radius: 10px;
+	margin: 0px auto;
 }
 
 .needed-list li:hover {
