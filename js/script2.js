@@ -1,7 +1,4 @@
 
-//var userInput = $('.add-item-input').val();
-//var pressedEnterInput = $('.needed-list').prepend("<li><img class='left-image' src='images/checkmark2.png' height='20' width='20'><a>" + userInput + "</a><img class='right-image' src='images/cut.jpg' height='20' width='20'></li>");
-
 $(document).ready(function() {
 	$('.right-image').click(function() {
 		$(this).parent().remove();
@@ -17,7 +14,7 @@ $(document).ready(function() {
 	$('.right-image').hide();
 	$('.needed-list li').mouseenter(function() {
 		$(this).addClass('selected');
-		$('.selected > .left-image').show();  //very close!
+		$('.selected > .left-image').show(); 
 		$('.selected > .right-image').show();
 	});
 	$('.needed-list li .selected').mouseleave(function() {
@@ -106,18 +103,6 @@ $(document).ready(function() {
 		});
 	});
 });
-
-
-
-
-/*$(document).ready(function() {
-	$('.add-item').keydown(function(e) {
-  		if (e.keyCode == 13) {
-    		$(this).val('').focus();    
-    		return false;
-  		}        
-	})
-});*/
 
 $(document).ready(function() {
 	$('.add-item-input').focus(function() {
