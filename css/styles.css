@@ -1,4 +1,5 @@
 * {
+	box-sizing: border-box;
 
 }
 
@@ -54,7 +55,7 @@ hr {
 	text-shadow: 0px 0px 6px #ddd;
 }
 
-div#shopping-basket {
+#shopping-basket {
 	position: relative;
 	top: 0px;
 	left: 0px;
@@ -86,7 +87,7 @@ div#shopping-basket {
 	
 }
 
-.add-item-input {
+#add-item-input {
 	border-radius: 5px;
 	border-color: #ddd;
 	color: #ddd;
@@ -97,7 +98,7 @@ div#shopping-basket {
 	text-align: center;
 }
 
-.btn {
+#btn {
 	padding: 0.3125rem;
 	background: #3c3030;
 	width: 4.375rem;
@@ -124,19 +125,17 @@ div#shopping-basket {
 	padding-right: 3rem;
 	text-align: center;
 	border: solid 1px transparent;
-	box-sizing: border-box;
 }
 
-.needed-list {
+#needed-list {
 	list-style-type: none;
-	box-sizing: border-box;
 	/*padding-left: 16.625rem;*/
 	margin-top: -0.9375rem;
 	text-align: center;
 	width: 100%;
  }
 
-.needed-list li {
+.item {
 	max-width: 21.875rem;
 	/*padding: 0.4375rem;
 	margin-bottom: 0.5625rem;*/
@@ -144,19 +143,27 @@ div#shopping-basket {
 	margin: 0px auto;
 }
 
-.needed-list li:hover {
-	cursor: pointer;
+.item:hover {
+	/*cursor: pointer;*/
 	border: dotted 2px #ddd;
 }
 
-.needed-list li .left-image {
-	float: left;
-	margin-top: 0.4375rem;
+.right-icon,
+.left-icon:hover {
+	cursor: pointer;
 }
 
-.needed-list li .right-image {
+
+.item .left-icon {
+	float: left;
+	margin-top: 0.4375rem;
+	display: none;
+}
+
+.item .right-icon {
 	float: right;
 	margin-top: 0.4375rem;
+	display: none;
 }
 
 .footer {
