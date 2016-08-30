@@ -43,10 +43,6 @@ $(document).ready(function() {
 					"</a><img class='right-icon' src='images/cut.jpg' height='20' width='20'></li>";
 				$shoppingList.prepend(newItem);
 			}
-    	/*var newItem = "<li class='item'><img class='left-icon' src='images/checkmark2.png' height='20' width='20'><a>" + 
-			inputValue + 
-			"</a><img class='right-icon' src='images/cut.jpg' height='20' width='20'></li>";
-		$shoppingList.prepend(newItem);*/
      });
   
 
