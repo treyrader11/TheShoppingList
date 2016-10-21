@@ -1,7 +1,6 @@
 'use strict'
 
 $(document).ready(function() {
-	//global variables
 	var $shoppingList = $('#needed-list');
 	var $item = $('li');
 	var $addItem = $('.add-item');

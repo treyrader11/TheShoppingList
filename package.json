@@ -1,0 +1,20 @@
+{
+  "name": "shoppingList",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/treyrader11/TheShoppingList.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/treyrader11/TheShoppingList/issues"
+  },
+  "dependencies": {
+    "jquery": "~3.1.1"
+  }
+}
